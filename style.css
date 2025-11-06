@@ -217,14 +217,30 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
 }
 .card__side {
   height: 50rem;
   transition: all 0.9s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__side--front {
   background-image: linear-gradient(to right, rgb(252, 139, 11), rgb(214, 117, 6));
 }
-.card:hover .card__side {
+.card__side--back {
+  background-color: green;
   transform: rotateY(180deg);
+}
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
 }
 
 /*# sourceMappingURL=style.css.map */
