@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+
+
+
+
+    &__side {
+        height: 50rem;
+        transition: all .9s;
+        background-image: linear-gradient(to right, $color-orange-ligth, $color-orange-dark);
+
+    }
+
+  
+
+   
+
+    &:hover &__side {
+        transform: rotateY(180deg);
+
+    }
+}
