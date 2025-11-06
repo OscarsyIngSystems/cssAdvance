@@ -10,8 +10,9 @@
 
 
     &__side {
+        background-color: #fff;
         height: 50rem;
-        transition: all .9s;
+        transition: all .9s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -19,11 +20,11 @@
         backface-visibility: hidden;
 
         &--front {
-            background-image: linear-gradient(to right, $color-orange-ligth, $color-orange-dark);
+           background-color: #fff;
         }
 
         &--back {
-            background-color: green;
+            background-image:  linear-gradient(to right, $color-orange-ligth, $color-orange-dark);
             transform: rotateY(180deg);
 
         }

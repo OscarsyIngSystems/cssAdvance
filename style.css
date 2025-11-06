@@ -221,8 +221,9 @@ body {
   height: 50rem;
 }
 .card__side {
+  background-color: #fff;
   height: 50rem;
-  transition: all 0.9s;
+  transition: all 0.9s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -230,10 +231,10 @@ body {
   backface-visibility: hidden;
 }
 .card__side--front {
-  background-image: linear-gradient(to right, rgb(252, 139, 11), rgb(214, 117, 6));
+  background-color: #fff;
 }
 .card__side--back {
-  background-color: green;
+  background-image: linear-gradient(to right, rgb(252, 139, 11), rgb(214, 117, 6));
   transform: rotateY(180deg);
 }
 .card:hover .card__side--front {
