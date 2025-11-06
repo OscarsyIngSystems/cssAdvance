@@ -63,6 +63,17 @@
    
 }
 
+.coll-1-of-3 {
+    width: calc((100% - (2* #{$gutter-horizontal}))/3);
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+
+   
+}
+
 .btn-text {
     // font-weight: 700;
 
@@ -180,4 +191,10 @@
         -webkit-background-clip: text;
         color: transparent;
     }
+}
+
+.section-tours{
+      background-color: $color-grey;
+    padding: 25rem 0;
+    margin-top: -8rem;
 }
