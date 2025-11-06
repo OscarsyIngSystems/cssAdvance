@@ -1,6 +1,5 @@
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -91,6 +90,14 @@ body {
   margin-right: 6rem;
 }
 
+.coll-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+  float: left;
+}
+.coll-1-of-4:not(:last-child) {
+  margin-right: 6rem;
+}
+
 .btn-text:link, .btn-text:visited {
   color: rgb(10, 160, 102);
   text-decoration: none;
@@ -141,6 +148,43 @@ body {
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
+}
+
+.section-feature {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(0, 255, 85, 0.8), rgba(10, 160, 102, 0.8)), url("assets/img1.jpg");
+  background-size: cover;
+  margin-top: -8rem;
+  transform: skewY(-7deg);
+}
+.section-feature > * {
+  transform: skewY(7deg);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  border-radius: 3px;
+  padding: 2.3rem;
+  text-align: center;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+  min-height: 25rem;
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feature-box:hover {
+  transform: translateY(-2rem) scale(1.03);
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgb(0, 255, 85), rgb(10, 160, 102));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
