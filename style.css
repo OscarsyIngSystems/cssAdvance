@@ -256,25 +256,25 @@ body {
   background-image: linear-gradient(to right bottom, rgb(252, 196, 75), rgb(180, 99, 6));
 }
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, rgba(133, 39, 86, 0.322), rgb(128, 0, 64));
+  background-image: linear-gradient(to right bottom, rgba(238, 61, 229, 0.322), rgb(184, 7, 175));
 }
 .card__side--back-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right bottom, rgba(133, 39, 86, 0.322), rgb(128, 0, 64));
+  background-image: linear-gradient(to right bottom, rgba(238, 61, 229, 0.322), rgb(184, 7, 175));
 }
 .card__side--btn-text:link, .card__side--btn-text:visited {
-  color: rgb(128, 0, 64);
+  color: rgb(184, 7, 175);
   text-decoration: none;
   display: inline-block;
-  border-bottom: 1px solid rgb(128, 0, 64);
+  border-bottom: 1px solid rgb(184, 7, 175);
   padding: 0.3rem;
   font-size: 2rem;
   transition: all 0.2s;
 }
 .card__side--btn-text:hover {
-  background-color: rgb(128, 0, 64);
+  background-color: rgb(184, 7, 175);
   color: white;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -282,6 +282,14 @@ body {
 .card__side--btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0);
+}
+.card__side--body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 23rem;
+  padding: 1rem;
 }
 .card__picture {
   min-height: 20rem;
@@ -292,16 +300,19 @@ body {
   background-image: linear-gradient(to right, rgba(252, 196, 75, 0.8), rgba(180, 99, 6, 0.8)), url("assets/img2.jpg");
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right, rgba(133, 39, 86, 0.8), rgba(128, 0, 64, 0.8)), url("assets/img5.png");
+  background-image: linear-gradient(to right, rgba(238, 61, 229, 0.8), rgba(184, 7, 175, 0.8)), url("assets/img5.png");
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right, rgba(133, 39, 86, 0.8), rgba(128, 0, 64, 0.8)), url("assets/img4.jpg");
+  background-image: linear-gradient(to right, rgba(238, 61, 229, 0.8), rgba(184, 7, 175, 0.8)), url("assets/img4.jpg");
 }
 .card:hover .card__side--front {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0deg);
+}
+.card__heading {
+  background-image: linear-gradient(to right, rgb(184, 7, 175), rgba(238, 61, 229, 0.322));
 }
 
 /*# sourceMappingURL=style.css.map */
