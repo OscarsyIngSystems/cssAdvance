@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mb-20 {
   margin-bottom: 2rem;
 }
@@ -214,6 +215,19 @@ body {
   margin-top: -12rem;
 }
 
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles con ancho máximo de 600 píxeles */
+  .coll-1-of-3 {
+    width: 90%;
+    padding: 5%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para tabletas y dispositivos con ancho intermedio */
+}
+@media only screen and (min-width: 1025px) {
+  /* Estilos para pantallas más grandes, como computadoras de escritorio */
+}
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
