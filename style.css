@@ -230,7 +230,7 @@ body {
   width: 100%;
   backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 .card__side--front {
   background-color: #fff;
@@ -246,6 +246,20 @@ body {
 }
 .card__side--back-3 {
   background-image: linear-gradient(to right bottom, rgb(80, 230, 250), rgb(3, 50, 151));
+}
+.card__picture {
+  min-height: 15rem;
+  background-blend-mode: screen;
+  background-size: cover;
+}
+.card__picture--1 {
+  background-image: linear-gradient(to right, rgba(252, 196, 75, 0.8), rgba(180, 99, 6, 0.8)), url("assets/img2.jpg");
+}
+.card__picture--2 {
+  background-image: linear-gradient(to right, rgba(80, 248, 170, 0.8), rgba(19, 139, 3, 0.8)), url("assets/img1.jpg");
+}
+.card__picture--3 {
+  background-image: linear-gradient(to right, rgba(80, 230, 250, 0.8), rgba(3, 50, 151, 0.8)), url("assets/img3.jpg");
 }
 .card:hover .card__side--front {
   transform: rotateY(180deg);

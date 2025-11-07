@@ -18,34 +18,66 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-border-radius: 3px;
+        border-radius: 3px;
 
-box-shadow: 0 1.5rem 4rem rgba(black,.8);
+        box-shadow: 0 1.5rem 4rem rgba(black, .4);
 
         &--front {
-           background-color: #fff;
+            background-color: #fff;
+
+
         }
 
         &--back {
             transform: rotateY(180deg);
 
-            &-1{
-            background-image:  linear-gradient(to right bottom, $color-orange-ligth, $color-orange-dark);
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-orange-ligth, $color-orange-dark);
 
             }
-            &-2{
-            background-image:  linear-gradient(to right bottom, $color-green-ligth, $color-green-dark);
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-green-ligth, $color-green-dark);
 
             }
-            &-3{
-            background-image:  linear-gradient(to right bottom, $color-blue-ligth, $color-blue-dark);
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-blue-ligth, $color-blue-dark);
 
             }
         }
 
     }
 
+    &__picture {
+        
+        min-height: 15rem;
+        background-blend-mode: screen;
+     
+        background-size: cover;
 
+        &--1 {
+            background-image: linear-gradient(to right,
+                    rgba($color-orange-ligth, 0.8),
+                    rgba($color-orange-dark, 0.8)),
+                url("assets/img2.jpg");
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right,
+                    rgba($color-green-ligth, 0.8),
+                    rgba($color-green-dark, 0.8)),
+                url("assets/img1.jpg");
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right,
+                    rgba($color-blue-ligth, 0.8),
+                    rgba($color-blue-dark, 0.8)),
+                url("assets/img3.jpg");
+        }
+
+    }
 
 
 
