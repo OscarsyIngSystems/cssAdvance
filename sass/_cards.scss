@@ -37,14 +37,44 @@
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-green-ligth, $color-green-dark);
+                background-image: linear-gradient(to right bottom, $color-ipn-ligth, $color-ipn-dark);
 
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-blue-ligth, $color-blue-dark);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(to right bottom, $color-ipn-ligth, $color-ipn-dark);
 
             }
+        }
+
+        &--btn-text {
+               &:link,
+            &:visited {
+                color: $color-ipn-dark;
+                text-decoration: none;
+                display: inline-block;
+                border-bottom: 1px solid $color-ipn-dark;
+                padding: 0.3rem;
+                font-size: 2rem;
+                transition: all 0.2s;
+            }
+
+            &:hover {
+                background-color: $color-ipn-dark;
+                color: white;
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+                transform: translateY(-2px);
+            }
+
+            &:active {
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                transform: translateY(0);
+            }
+
+       
         }
 
     }
@@ -66,16 +96,16 @@
 
         &--2 {
             background-image: linear-gradient(to right,
-                    rgba($color-green-ligth, 0.8),
-                    rgba($color-green-dark, 0.8)),
-                url("assets/img1.jpg");
+                    rgba($color-ipn-ligth, 0.8),
+                    rgba($color-ipn-dark, 0.8)),
+                url("assets/img5.png");
         }
 
         &--3 {
             background-image: linear-gradient(to right,
-                    rgba($color-blue-ligth, 0.8),
-                    rgba($color-blue-dark, 0.8)),
-                url("assets/img3.jpg");
+                    rgba($color-ipn-ligth, 0.8),
+                    rgba($color-ipn-dark, 0.8)),
+                url("assets/img4.jpg");
         }
 
     }
