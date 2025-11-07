@@ -223,7 +223,7 @@ body {
 .card__side {
   background-color: #fff;
   height: 50rem;
-  transition: all 0.9s ease;
+  transition: all 1s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -248,7 +248,7 @@ body {
   background-image: linear-gradient(to right bottom, rgb(80, 230, 250), rgb(3, 50, 151));
 }
 .card__picture {
-  min-height: 15rem;
+  min-height: 20rem;
   background-blend-mode: screen;
   background-size: cover;
 }

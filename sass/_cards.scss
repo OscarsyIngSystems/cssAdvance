@@ -12,7 +12,7 @@
     &__side {
         background-color: #fff;
         height: 50rem;
-        transition: all .9s ease;
+        transition: all 1s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -50,13 +50,14 @@
     }
 
     &__picture {
-        
-        min-height: 15rem;
+
+        min-height: 20rem;
         background-blend-mode: screen;
-     
+
         background-size: cover;
 
         &--1 {
+
             background-image: linear-gradient(to right,
                     rgba($color-orange-ligth, 0.8),
                     rgba($color-orange-dark, 0.8)),
