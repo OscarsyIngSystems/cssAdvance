@@ -18,7 +18,7 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: 5px;
 
         box-shadow: 0 1.5rem 4rem rgba(black, .4);
 
@@ -95,7 +95,7 @@
 
         min-height: 20rem;
         background-blend-mode: screen;
-
+        border-radius: 5px;
         background-size: cover;
 
         &--1 {
