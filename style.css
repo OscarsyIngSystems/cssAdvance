@@ -67,7 +67,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, rgb(0, 255, 85), rgb(10, 160, 102));
+  background-image: linear-gradient(to right, rgb(80, 248, 170), rgb(19, 139, 3));
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -120,16 +120,16 @@ body {
 }
 
 .btn-text:link, .btn-text:visited {
-  color: rgb(10, 160, 102);
+  color: rgb(19, 139, 3);
   text-decoration: none;
   display: inline-block;
-  border-bottom: 1px solid rgb(10, 160, 102);
+  border-bottom: 1px solid rgb(19, 139, 3);
   padding: 0.3rem;
   font-size: 2rem;
   transition: all 0.2s;
 }
 .btn-text:hover {
-  background-color: rgb(10, 160, 102);
+  background-color: rgb(19, 139, 3);
   color: white;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -164,7 +164,7 @@ body {
 .composition__photo:hover {
   transform: scale(1.05);
   padding: 1rem;
-  border: 1rem solid rgb(10, 160, 102);
+  border: 1rem solid rgb(19, 139, 3);
   z-index: 2;
 }
 .composition:hover .composition__photo:not(:hover) {
@@ -173,7 +173,7 @@ body {
 
 .section-feature {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 255, 85, 0.8), rgba(10, 160, 102, 0.8)), url("assets/img1.jpg");
+  background-image: linear-gradient(to right bottom, rgba(80, 248, 170, 0.8), rgba(19, 139, 3, 0.8)), url("assets/img1.jpg");
   background-size: cover;
   margin-top: -12rem;
   transform: skewY(-7deg);
@@ -203,7 +203,7 @@ body {
   font-size: 6rem;
   margin-bottom: 0.5rem;
   display: inline-block;
-  background-image: linear-gradient(to right, rgb(0, 255, 85), rgb(10, 160, 102));
+  background-image: linear-gradient(to right, rgb(80, 248, 170), rgb(19, 139, 3));
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -229,13 +229,23 @@ body {
   left: 0;
   width: 100%;
   backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
 }
 .card__side--front {
   background-color: #fff;
 }
 .card__side--back {
-  background-image: linear-gradient(to right, rgb(252, 139, 11), rgb(214, 117, 6));
   transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, rgb(252, 196, 75), rgb(180, 99, 6));
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, rgb(80, 248, 170), rgb(19, 139, 3));
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, rgb(80, 230, 250), rgb(3, 50, 151));
 }
 .card:hover .card__side--front {
   transform: rotateY(180deg);

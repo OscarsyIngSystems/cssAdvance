@@ -18,15 +18,29 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
+border-radius: 3px;
+
+box-shadow: 0 1.5rem 4rem rgba(black,.8);
 
         &--front {
            background-color: #fff;
         }
 
         &--back {
-            background-image:  linear-gradient(to right, $color-orange-ligth, $color-orange-dark);
             transform: rotateY(180deg);
 
+            &-1{
+            background-image:  linear-gradient(to right bottom, $color-orange-ligth, $color-orange-dark);
+
+            }
+            &-2{
+            background-image:  linear-gradient(to right bottom, $color-green-ligth, $color-green-dark);
+
+            }
+            &-3{
+            background-image:  linear-gradient(to right bottom, $color-blue-ligth, $color-blue-dark);
+
+            }
         }
 
     }
