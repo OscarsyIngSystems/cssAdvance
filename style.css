@@ -293,6 +293,27 @@ body {
   object-fit: cover;
 }
 
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgb(80, 248, 170), rgb(19, 139, 3));
+}
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/img5.png);
+  background-size: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  height: 50rem;
+  position: relative;
+}
+.book__form {
+  width: 50%;
+  padding: 6rem;
+}
+.book__login {
+  margin-left: 20%;
+}
+
 @media only screen and (max-width: 600px) {
   /* Estilos para dispositivos móviles con ancho máximo de 600 píxeles */
   .coll-1-of-3 {

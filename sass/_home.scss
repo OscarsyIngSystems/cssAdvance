@@ -300,6 +300,53 @@ filter: blur(3px) brightness(80%);
 }
 
 
+
+.section-book{
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-green-ligth, $color-green-dark);
+}
+
+.book{
+  background-image: linear-gradient(
+    
+  105deg,
+  rgba(white,.9) 0%,
+   rgba(white,.9) 50%,
+   transparent 50%,
+  ), url(../assets/img5.png);
+
+
+  background-size: 100%;
+border-radius: 5px;
+box-shadow: 0 1.5rem 4rem rgba(black, .3);
+  height: 50rem;
+position: relative;
+
+
+&__form{
+  width: 50%;
+  padding: 6rem;
+}
+
+&__login{
+  margin-left: calc(((100%/2)/2) - 5%);
+}
+}
+
+
+// .bg-book{
+//   background-color: white;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   float: left;
+//   opacity: .3;
+//   width: 45%;
+//   height: 100%;
+//   transform: skewX(15deg);
+//   z-index: 10;
+//   background-size: cover;
+// }
 //#region Medias Queries
 
 @media only screen and (max-width: 600px) {
