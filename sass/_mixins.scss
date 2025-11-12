@@ -15,3 +15,54 @@
 
     width: calc((100% - (#{$gutter-horizontal} * ($numCol - 1)))/$numCol);
 }
+
+
+//#region Media Queris
+
+/**
+0 - 600: phone
+600 - 900: tablet portrait
+900 - 1200: tablet landscape
+[1200 - 1800 ] codigo normal
+1800 - + big desktop
+
+
+$breakpoint variant
+
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+
+1rem = 16px
+
+
+forma de usar en sass
+
+
+@include responsive(phone){
+    font-size: 30px;
+}
+
+
+**/
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone{
+        @media (max-width: 37.5rem){@content}; // 600px = 600/16
+    }
+    @if $breakpoint == tab-port{
+        @media (max-width: 56.25rem){@content}; // 900px 
+    }
+    @if $breakpoint == tab-land{
+        @media (max-width: 75rem){@content}; // 1200px 
+    }
+    @if $breakpoint == big-desktop{
+        @media (min-width: 112.5rem){@content}; // 1800px 
+    }
+}
+
+
+
+//#endregion
